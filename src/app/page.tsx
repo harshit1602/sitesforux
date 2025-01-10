@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 const calculateTimeLeft = () => {
-  const launchDate = new Date("2025-01-14T12:00:00"); // Set your launch date
+  const launchDate = new Date("2025-01-15T12:00:00"); // Set your launch date
   const now = new Date();
   const difference = launchDate.getTime() - now.getTime();
 
