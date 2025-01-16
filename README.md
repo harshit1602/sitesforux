@@ -22,6 +22,7 @@ SitesforUX is a platform dedicated to providing high-quality, handpicked resourc
 - **Language:** TypeScript
 - **Styling:** TailwindCSS
 - **Deployment:** Vercel
+- **State Management:** React Hooks
 
 ---
 

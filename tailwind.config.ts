@@ -21,7 +21,7 @@ export default {
 
       animation: {
         backgroundshine: "backgroundshine 4s linear infinite",
-        marquee: 'marquee 20s linear infinite',
+        marquee: 'marquee 18s linear infinite',
       },
 
       keyframes: {
@@ -30,8 +30,8 @@ export default {
           to: { backgroundPosition: "-200%" },
         },
         marquee: {
-          '0%': { transform: "translateX(100%)" },
-          '100%': { transform: "translateX(-200%)" },
+          '0%': { transform: "translateX(0%)" },
+          '100%': { transform: "translateX(-100%)" },
         }
       },
     },

@@ -2,13 +2,13 @@
 
 import React, { useState } from "react";
 import "@/app/globals.css";
-import ImageCard from "@/components/webistepreview";
+import BookComponent from "@/components/bookcomponent";
 import { Plus, StarFour } from "@phosphor-icons/react";
-import { home } from "@/data/home";
+import { books } from "@/data/resources";
 import NewsletterModal from "@/components/newslettermodal";
 import SubmitModal from "@/components/submitmodal";
 
-export default function Home() {
+export default function Books() {
   const [isNewsletterModalOpen, setIsNewsletterModalOpen] = useState(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
 
@@ -20,13 +20,13 @@ export default function Home() {
     /** Main Container */
     <div className="w-full flex flex-col main-content gap-8 bg-pagebg lg:rounded-xl h-full overflow-y-auto">
       {/* Header Section */}
-      <header className="flex flex-col items-center justify-center text-center gap-5 px-4 pt-8 lg:pt-20 pb-4">
+      <header className="flex flex-col lg:flex-row items-start gap-5 lg:gap-4 lg:justify-between px-4 lg:px-7 pt-8 pb-4">
         <div>
-          <h1 className="text-white text-2xl lg:text-3xl xl:text-4xl font-instrument font-semibold leading-tight">
-          Discover the Web's Best Curated Resources for Every UX Designer          
+          <h1 className="text-white text-2xl lg:text-4xl font-instrument font-semibold leading-tight">
+          Essential Reads to Elevate <br/> Your UX and Design Skills
           </h1>
-          <h2 className="text-[#707070] text-sm lg:text-lg font-instrument font-normal mt-2 lg:mt-2 leading-tight">
-          Explore a handpicked collection of platforms offering top-notch design resources
+          <h2 className="text-[#707070] text-sm lg:text-lg font-instrument font-normal mt-2 lg:mt-4 leading-tight">
+          Explore a curated selection of books covering the <br/> principles, practices, and innovations in UX design
           </h2>
         </div>
 
@@ -50,17 +50,14 @@ export default function Home() {
       </header>
 
       {/* Content Section */}
-      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-4 px-4 lg:px-7">
-        {home.map((home) => (
-          <ImageCard
-            key={home.id}
-            src={home.image}
-            alt={home.name}
-            name={home.name}
-            link={home.link}
-            isEditorsChoice={home.isEditorsChoice}
-            isCategoryAvailable={home.isCategoryAvailable}
-            category={home.category}
+      <section className="w-full grid grid-cols-2 place-items-center md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 lg:gap-6 pb-4 px-4 lg:px-7">
+        {books.map((books) => (
+          <BookComponent
+          key={books.key}
+          src={books.image}
+          name={books.name}
+          description={books.description}
+          link={books.link}
           />
         ))}
       </section>
