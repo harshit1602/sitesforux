@@ -74,7 +74,7 @@ export const webdesign =[
     },
     {
         id: 10,
-        image: "https://res.cloudinary.com/dp3ie9obh/image/upload/v1735239713/Screenshot_2024-12-27_002934_fix47w.png",
+        image: "https://res.cloudinary.com/dp3ie9obh/image/upload/v1737008779/Screenshot_2025-01-16_115551_mhofgz.png",
         name: "Page Flows",
         link: "https://pageflows.com/web/",
         isCategoryAvailable: false,
