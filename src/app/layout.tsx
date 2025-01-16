@@ -3,6 +3,8 @@ import "./globals.css";
 import Sidebar from "../components/sidebar";
 import Navbar from "@/components/navbar";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/next';
+
 
 export const metadata: Metadata = {
   title: "SitesforUX",
@@ -82,6 +84,7 @@ export default function RootLayout({
           </div>
           <Sidebar />
           {children}
+          <Analytics />
         </div>
 
         {/* Product Hunt Embed */}
