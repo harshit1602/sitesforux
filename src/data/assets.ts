@@ -11,7 +11,7 @@ export const backgrounds = [
         id: 2,
         image: "https://res.cloudinary.com/dp3ie9obh/image/upload/v1734978700/grainient_xpz5jv.png",
         name: "Grainient",
-        link: "https://grainient.com/",
+        link: "https://grainient.supply/",
         isEditorsChoice: true,
         isCategoryAvailable: false,
         category: "",
