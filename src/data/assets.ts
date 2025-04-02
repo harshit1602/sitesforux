@@ -536,7 +536,7 @@ export const typography = [
         id: 4,
         image: "https://res.cloudinary.com/dp3ie9obh/image/upload/v1735196147/Screenshot_2024-12-26_122533_swxr6k.png",
         name: "Google Fonts",
-        link: "htts://fonts.google.com/",
+        link: "https://fonts.google.com/",
         isCategoryAvailable: false,
         category: "",
     },
